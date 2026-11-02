@@ -26,7 +26,7 @@ def home():
     }
 
 @app.post("/predict")
-def predict_iris(data: Iris_data):
+def predict_iris(data: Iris_Data):
     input_data = pd.DataFrame({
         "sepal length (cm)": [data.sepal_length],
         "sepal width (cm)": [data.sepal_width],
