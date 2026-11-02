@@ -10,10 +10,6 @@ app = FastAPI(
 )
 
 model = joblib.load("../model/model.pkl")
-sepal length (cm): float
-    sepal width (cm): float
-    petal length (cm): float
-    petal width (cm): float
 class IrisData(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
