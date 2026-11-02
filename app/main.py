@@ -9,7 +9,7 @@ app = FastAPI(
     version="1.0"
 )
 
-model = joblib.load("../model/model.pkl")
+model = joblib.load("model/model.pkl")
 class IrisData(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
